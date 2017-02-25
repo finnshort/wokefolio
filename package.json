@@ -1,0 +1,40 @@
+{
+  "name": "wokefolio",
+  "version": "0.1.0",
+  "description": "socially responsible investing @ Lesbians Who Tech BlackRock Hackathon",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataliescottdavidson/wokefolio.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nataliescottdavidson/wokefolio/issues"
+  },
+  "homepage": "https://github.com/nataliescottdavidson/wokefolio#readme",
+  "scripts": {
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "start-server": "babel-node server.js",
+    "start-client": "babel-node start-client.js",
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test:watch": "npm test -- --watch"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "concurrently": "^3.1.0",
+    "mocha": "^3.2.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
