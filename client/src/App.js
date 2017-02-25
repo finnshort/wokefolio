@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 class App extends Component {
   render() {
     return (
+	<div class="container">
       <div class="panel panel-default">
         <div class="panel-heading">Select Your Funds</div>
         <table class="table">
@@ -34,7 +35,7 @@ class App extends Component {
 		  <tr><td>I-MIDVAL</td><td>4.48</td><td>4.87</td><td>5.4</td><td>8.79</td></tr>
         </table>
       </div>
-	  
+	</div>  
     );
   }
 }
